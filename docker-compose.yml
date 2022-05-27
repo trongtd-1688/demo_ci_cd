@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  demo_ci_cd:
+    build: .
+    container_name: demo_ci_cd
+    environment:
+      - SPRING_PROFILES_ACTIVE=${SPRING_PROFILES_ACTIVE}

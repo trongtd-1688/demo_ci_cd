@@ -1,0 +1,15 @@
+## Spring props
+
+logging:
+  file:
+    name: log/${SPRING_PROFILES_ACTIVE}.log
+  level:
+    org.hibernate.SQL: DEBUG
+
+server:
+  port: 8080
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_trace_param # never in production
+    include-exception: true
